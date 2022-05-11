@@ -66,6 +66,9 @@ To run the application on the web, follow the instructions :
 - run `cd server`
 - run `yarn install` to install the API dependencies of the project
 - run `npm install dotenv --save` for .env to work
+	- .env parameters required:
+		- MONGODB_URI="mongodb+srv://<username>:<password>@cluster<x>.<xxxxx>.mongodb.net/<databaseName>?retryWrites=true&w=majority"
+		- 
 - then run `yarn run devStart` to run the API, will open at the address `localhost:3004`
 <br>
 
