@@ -20,8 +20,15 @@ app.post("/insert", async (req, res) => {
     const bookName = req.body.bookName;
     const bookPrice = req.body.bookPrice;
     const bookAuthor = req.body.bookAuthor;
-    const bookCategory = req.body.bookCategory
-    const book = new BookModel({bookName: bookName, bookPrice: bookPrice, bookAuthor: bookAuthor, bookCategory: bookCategory});
+    const bookCategory = req.body.bookCategory;
+    const desc = req.body.description;
+    const book = new BookModel({
+        bookName: bookName, 
+        bookPrice: bookPrice, 
+        bookAuthor: bookAuthor, 
+        bookCategory: bookCategory,
+        desc,
+    });
 
     try {
         await book.save();

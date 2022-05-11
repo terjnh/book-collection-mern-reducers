@@ -13,6 +13,9 @@ const BookSchema = new mongoose.Schema({
     },
     bookCategory: {
         type: String
+    },
+    desc: {
+        type: Object
     }
 });
 
